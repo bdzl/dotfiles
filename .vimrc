@@ -30,5 +30,7 @@ set fileencodings=utf-8
 
 colorscheme wombat256mod
 
+map <F2> :NERDTreeToggle<CR>
+
 hi Error NONE
 hi ErrorMsg NONE
