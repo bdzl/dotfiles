@@ -27,7 +27,7 @@ set list
 set ruler
 set encoding=utf-8
 set fileencodings=utf-8
-set mouse=a
+set colorcolumn=100
 
 colorscheme wombat256mod
 
