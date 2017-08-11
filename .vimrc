@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wombat256.vim'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 
@@ -28,6 +29,7 @@ set ruler
 set encoding=utf-8
 set fileencodings=utf-8
 set colorcolumn=100
+set laststatus=2
 
 colorscheme wombat256mod
 
