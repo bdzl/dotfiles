@@ -33,6 +33,8 @@ set laststatus=2
 
 colorscheme wombat256mod
 
+highlight ColorColumn ctermbg=DarkGrey
+
 map <F2> :NERDTreeToggle<CR>
 
 hi Error NONE
