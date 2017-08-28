@@ -19,7 +19,6 @@ syntax enable
 set number
 set wildmenu
 set shiftwidth=4
-set autoindent
 set smartindent
 set smarttab
 set ts=4
