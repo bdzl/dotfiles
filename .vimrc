@@ -16,6 +16,7 @@ filetype plugin on
 
 syntax enable
 
+set tags=./tags;/,tags;/
 set number
 set wildmenu
 set shiftwidth=4
