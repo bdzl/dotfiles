@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wombat256.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -16,7 +17,6 @@ filetype plugin on
 
 syntax enable
 
-set tags=./tags;/,tags;/
 set number
 set wildmenu
 set shiftwidth=4
@@ -30,12 +30,19 @@ set encoding=utf-8
 set fileencodings=utf-8
 set colorcolumn=100
 set laststatus=2
+let g:ycm_show_diagnostics_ui=0
 
 colorscheme wombat256mod
 
 highlight ColorColumn ctermbg=DarkGrey
 
-map <F2> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden=1
+
+map <F2> :NERDTree<CR>
+map <F3> :NERDTreeFind<CR>
+map <F4> :NERDTreeClose<CR>
+
+noremap <C-]> :YcmCompleter GoTo<CR>
 
 hi Error NONE
 hi ErrorMsg NONE
