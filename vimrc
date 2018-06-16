@@ -29,7 +29,6 @@ set ruler
 set encoding=utf-8
 set fileencodings=utf-8
 set colorcolumn=100
-set laststatus=2
 
 colorscheme wombat256mod
 highlight ColorColumn ctermbg=DarkGrey
@@ -37,11 +36,26 @@ highlight ColorColumn ctermbg=DarkGrey
 hi Error NONE
 hi ErrorMsg NONE
 
+""""" lightline
+set laststatus=2
+
+let g:lightline = {
+    \ 'component_function': {
+    \    'filename': 'LightLineFilename'
+    \ }
+\ }
+
+function! LightLineFilename()
+    return expand('%:p')
+endfunction
+
+""""" YouCompleteMe
 set completeopt-=preview
 let g:ycm_show_diagnostics_ui=0
 let g:ycm_extra_conf_globlist=['~/.ycm_extra_conf.py']
 noremap <C-]> :YcmCompleter GoTo<CR>
 
+""""" nerdtree
 let g:NERDTreeShowHidden=1
 map <F2> :NERDTree<CR>
 map <F3> :NERDTreeFind<CR>
