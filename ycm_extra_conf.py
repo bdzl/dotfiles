@@ -6,7 +6,7 @@ import ycm_core
 
 # specify project directory before usage
 # example: compilation_database_folder = os.path.join(os.environ['WORKING_DIR'], 'source')
-compilation_database_folder = None
+compilation_database_folder = os.path.join(os.environ['YT_WORKING_DIR'], 'source')
 assert compilation_database_folder is not None, 'YCMCompilationDatabaseFolderInitError'
 
 assert os.path.exists(compilation_database_folder), 'YCMCompilationDatabaseLocationError'
