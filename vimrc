@@ -13,6 +13,14 @@ Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
+function! CppSwitchSourceHeader()
+    if (expand('%:e') == "cpp")
+        find %:r.h
+    else
+        find %:r.cpp
+    endif
+endfunction
+
 filetype plugin on
 
 syntax enable
