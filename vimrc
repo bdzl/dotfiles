@@ -38,6 +38,7 @@ set ruler
 set encoding=utf-8
 set fileencodings=utf-8
 set colorcolumn=100
+set nowrap
 
 colorscheme wombat256mod
 highlight ColorColumn ctermbg=DarkGrey
