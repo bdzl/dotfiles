@@ -10,6 +10,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'wombat256.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
@@ -34,7 +35,7 @@ set smarttab
 set ts=4
 set expandtab
 set list
-set listchars=
+set listchars=tab:>\ ,
 set ruler
 set encoding=utf-8
 set fileencodings=utf-8
