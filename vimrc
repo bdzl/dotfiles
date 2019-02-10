@@ -34,14 +34,21 @@ set smarttab
 set ts=4
 set expandtab
 set list
+set listchars=
 set ruler
 set encoding=utf-8
 set fileencodings=utf-8
 set colorcolumn=100
-set nowrap
 
 colorscheme wombat256mod
 highlight ColorColumn ctermbg=DarkGrey
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 hi Error NONE
 hi ErrorMsg NONE
