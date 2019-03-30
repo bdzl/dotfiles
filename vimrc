@@ -9,7 +9,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wombat256.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
 
 call vundle#end()
@@ -67,12 +66,6 @@ let g:lightline = {
 function! LightLineFilename()
     return expand('%:p')
 endfunction
-
-""""" YouCompleteMe
-set completeopt-=preview
-let g:ycm_show_diagnostics_ui=0
-let g:ycm_extra_conf_globlist=['~/.ycm_extra_conf.py']
-noremap <C-]> :YcmCompleter GoTo<CR>
 
 """"" nerdtree
 let g:NERDTreeShowHidden=1
