@@ -11,6 +11,7 @@ Plugin 'wombat256.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'fatih/vim-go'
 Plugin 'mhinz/vim-startify'
+Plugin 'yegappan/grep'
 
 call vundle#end()
 
@@ -72,4 +73,9 @@ endfunction
 let g:NERDTreeShowHidden=1
 map <F2> :NERDTree<CR>
 map <F3> :NERDTreeFind<CR>
-map <F4> :NERDTreeClose<CR>
+
+""""" grep
+map <F4> :Rgrep<CR>
+
+let Grep_Default_Options = "-I"
+let Grep_Default_Filelist = "*.c *.cpp *.asm *.py *.h"
