@@ -10,6 +10,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'wombat256.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'fatih/vim-go'
+Plugin 'mhinz/vim-startify'
 
 call vundle#end()
 
