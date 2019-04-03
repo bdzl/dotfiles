@@ -78,4 +78,4 @@ map <F3> :NERDTreeFind<CR>
 map <F4> :Rgrep<CR>
 
 let Grep_Default_Options = "-I"
-let Grep_Default_Filelist = "*.c *.cpp *.asm *.py *.h"
+let Grep_Default_Filelist = "*.c *.cpp *.asm *.py *.h *.cc *.proto"
