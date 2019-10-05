@@ -36,7 +36,7 @@ set smarttab
 set ts=4
 set expandtab
 set list
-set listchars=tab:>\ ,
+set listchars=tab:\ \ ,
 set ruler
 set encoding=utf-8
 set fileencodings=utf-8
@@ -53,6 +53,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+hi SpecialKey NONE
 hi Error NONE
 hi ErrorMsg NONE
 
@@ -78,4 +79,4 @@ map <F3> :NERDTreeFind<CR>
 map <F4> :Rgrep<CR>
 
 let Grep_Default_Options = "-I"
-let Grep_Default_Filelist = "*.c *.cpp *.asm *.py *.h *.cc *.proto"
+let Grep_Default_Filelist = "*.c *.cpp *.asm *.py *.h *.cc *.proto *.java *.go"
